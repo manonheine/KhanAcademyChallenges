@@ -1,0 +1,26 @@
+var xPos = 1;
+var yPos = 370;
+
+var xPos2 = 400; 
+var yPos2 = 150; 
+
+draw = function() {
+    background(29, 40, 115);
+    fill(255, 242, 0);
+    ellipse(xPos, yPos, 10, 10); //star from the left
+    ellipse(xPos2, yPos2, 10, 10); //star from the right 
+    ellipse(20, 40, 10, 10); // other stars
+    ellipse(100, 150, 10, 10);
+    ellipse(200, 200, 10, 10);
+    ellipse(300, 90, 10, 10);
+    ellipse(250, 300, 10, 10);
+    ellipse(150, 350, 10, 10);
+    ellipse(350, 330, 10, 10);
+    
+    xPos += 1; 
+    yPos -= 1; 
+    
+    xPos2 -= 1; 
+    yPos2 += 0.3; 
+    
+};
