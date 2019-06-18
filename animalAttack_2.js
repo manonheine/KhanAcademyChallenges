@@ -31,6 +31,9 @@ draw = function() {
     ellipse(bodyX, bodyY-(bodyWH/2.8), bodyWH/4, bodyWH/10); // mouth
     
     fill(255, 105, 5);
-    rect(bodyX-tongue/2, bodyY-50, tongue, tongue*5); // tongue
-    ellipse(bodyX, bodyY, tongue, tongue); 
+    rect(bodyX-tongue/2, bodyY-tongue*5, tongue, tongue2*5); // tongue
+    ellipse(bodyX, tongueTip, tongue, tongue);
+    
+    tongue2 = tongue2 + 0.5; 
+    tongueTip = tongueTip + 2.5;  
 };
