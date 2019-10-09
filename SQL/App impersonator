@@ -1,0 +1,17 @@
+-- CREATE a table to store the data.
+-- INSERT a few example rows in the table.
+-- Use an UPDATE to emulate what happens when you edit data in the app.
+-- Use a DELETE to emulate what happens when you delete data in the app.
+
+CREATE TABLE books (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, author TEXT, pages INTEGER, rating INTEGER); 
+
+INSERT INTO books (title, author, pages, rating) VALUES ("War and Peace", "Leo Tolstoy", 3000, 5); 
+INSERT INTO books (title, author, pages, rating) VALUES ("Anna Karenina", "Leo Tolstoy", 1500, 4); 
+INSERT INTO books (title, author, pages, rating) VALUES ("Les Miserables", "Victor Hugo", 1000, 5); 
+INSERT INTO books (title, author, pages, rating) VALUES ("Le grand Coeur", "JC Ruffin", 600, 3); 
+
+UPDATE books SET rating = 5 WHERE id = 4; 
+
+DELETE FROM books WHERE id = 2; 
+
+SELECT * FROM books; 
